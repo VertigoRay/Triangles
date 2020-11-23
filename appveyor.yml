@@ -3,5 +3,8 @@ version: 1.0.{build}
 build_script:
 - ps: |
     $PSVersionTable
+    $pwd
+    Get-InstalledModule Pester
     Install-Module Pester -Scope CurrentUser -Force
-    Invoke-Pester .\Tests
+    Get-InstalledModule Pester
+    Invoke-Pester .\Tests -EnableExit
