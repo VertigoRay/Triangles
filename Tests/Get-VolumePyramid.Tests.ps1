@@ -1,8 +1,6 @@
 [IO.DirectoryInfo] $dir = $PSScriptRoot
 [IO.DirectoryInfo] $projectRoot = $dir.Parent
-. "${projectRoot}\Triangles\Public\Get-AreaRectangle.ps1"
-. "${projectRoot}\Triangles\Public\Get-AreaTriangle.ps1"
-. "${projectRoot}\Triangles\Public\Get-VolumePyramid.ps1"
+Import-Module "$($projectRoot.FullName)\Triangles\Triangles.psm1"
 
 Describe 'Get-VolumePyramid' {
     Context 'Calculate Volume of Rectangular Pyramid:' {

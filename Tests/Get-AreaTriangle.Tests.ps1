@@ -1,6 +1,6 @@
 [IO.DirectoryInfo] $dir = $PSScriptRoot
 [IO.DirectoryInfo] $projectRoot = $dir.Parent
-. "${projectRoot}\Triangles\Public\Get-AreaTriangle.ps1"
+Import-Module "$($projectRoot.FullName)\Triangles\Triangles.psm1"
 
 Describe 'Get-AreaTriangle' {
     Context 'Calculate Area of:' {
