@@ -2,4 +2,6 @@ version: 1.0.{build}
 
 build_script:
 - ps: |
+    $PSVersionTable
+    Install-Module Pester -Scope CurrentUser -Force
     Invoke-Pester .\Tests
