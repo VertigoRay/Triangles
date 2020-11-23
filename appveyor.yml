@@ -2,5 +2,5 @@ version: 1.0.{build}
 
 build_script:
 - ps: |
-    Install-Module Pester -Scope CurrentUser -Force
+    Install-Module Pester -MaximumVersion 3.4.0 -Scope CurrentUser -Force -SkipPublisherCheck
     Invoke-Pester .\Tests -EnableExit
