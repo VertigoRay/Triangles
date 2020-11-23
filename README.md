@@ -1,2 +1,1 @@
-# Triangles
 Fun with triangles
