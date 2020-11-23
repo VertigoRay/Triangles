@@ -1,6 +1,3 @@
-. "$PSScriptRoot\Get-AreaTriangle.ps1"
-. "$PSScriptRoot\Get-AreaRectangle.ps1"
-
 <#
 .SYNOPSIS
     Calculate the volume of a pyramid.

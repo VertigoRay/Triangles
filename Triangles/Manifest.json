@@ -1,0 +1,12 @@
+{
+    "ModuleName": "Triangles",
+    "ModuleVersion": null,
+    "Description": "Fun with Triangles ...",
+    "Author": "Raymond Piller",
+    "CompanyName": "LTEC5510",
+    "Copyright": "© {0} University of North Texas",
+    "GUID": "4c7a9a4e-5409-40a7-afb0-a0bc47898437",
+    "RootModule": "Triangles",
+    "PowerShellVersion": "2.0",
+    "HelpInfoURI": "https://github.com/VertigoRay/Triangles"
+}
