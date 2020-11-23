@@ -4,7 +4,7 @@ build_script:
 - ps: |
     $PSVersionTable
     $pwd
-    Get-InstalledModule Pester
-    Install-Module Pester -Scope CurrentUser -Force
-    Get-InstalledModule Pester
+    Get-Module Pester -ListAvail
+    Install-Module Pester -MaximumVersion 3.4.0 -Scope CurrentUser -Force -SkipPublisherCheck
+    Get-Module Pester -ListAvail
     Invoke-Pester .\Tests -EnableExit
